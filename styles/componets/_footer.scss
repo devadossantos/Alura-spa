@@ -1,0 +1,16 @@
+@import '../abstract/variaveis';
+
+@mixin bg-color{
+    background-image: linear-gradient( to right, $cor-primaria, $cor-secundaria, $cor-terciaria);
+}
+
+footer{
+    @include bg-color();
+    text-align: center;
+    font-size: $tamanho-do-texto /2;
+    margin: 1rem;
+    padding: 1.2rem;
+    i{
+        color: red;
+    }
+}
